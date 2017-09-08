@@ -29,7 +29,8 @@
 
 -(void)serve:(int)orders {
     
-    double price = [self.delegate foodTruck:self priceForFood:self.foodType];
+    //the method [self.delegate returns the function given in protocol].... [-(double)foodTruck:(FoodTruck *)truck priceForFood:(NSString *)food;];
+    double price = [self.delegate foodTruck:self priceForFood:_foodType];
     
     NSLog(@"Welcome to %@", self.name);
     NSLog(@"We serve %@ for $%0.2f", self.foodType, price);

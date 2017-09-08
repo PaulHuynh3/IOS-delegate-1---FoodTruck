@@ -22,10 +22,10 @@
 @property (nonatomic, weak) id<FoodTruckDelegate> delegate;
 
 
-
 -(instancetype)initWithName:(NSString *)pun andFoodType:(NSString *)foodType;
 
 -(void)serve:(int)orders;
+
 -(void)cashOut;
 
 
