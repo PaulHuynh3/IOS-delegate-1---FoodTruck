@@ -42,4 +42,5 @@
     NSLog(@"%@ earned %0.2f today!", self.name, self.earnings);
 }
 
+
 @end

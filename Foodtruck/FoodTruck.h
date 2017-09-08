@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+//so they can import stuff from cook without it looping
 @class FoodTruck;
 
 @protocol FoodTruckDelegate <NSObject>
@@ -20,9 +21,13 @@
 
 @property (nonatomic, weak) id<FoodTruckDelegate> delegate;
 
+
+
 -(instancetype)initWithName:(NSString *)pun andFoodType:(NSString *)foodType;
 
 -(void)serve:(int)orders;
 -(void)cashOut;
+
+
 
 @end
